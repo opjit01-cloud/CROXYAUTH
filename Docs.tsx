@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ref, onValue } from 'firebase/database';
-import { db } from '../services/firebase';
-import { SDK } from '../types';
+import { db } from './firebase';
+import { SDK } from './types';
 import {
     ArrowLeft, Shield, Key, Share2,
     Code, ChevronRight, Copy, Check, Github,
