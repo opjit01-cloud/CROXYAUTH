@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { onAuthStateChanged, User as FirebaseUser } from 'firebase/auth';
-import { auth } from './services/firebase';
+import { auth } from './firebase';
 
 import Landing from './pages/Landing';
 import Login from './pages/Login';
@@ -15,7 +15,7 @@ import Shop from './pages/Shop';
 import TOS from './pages/TOS';
 import Docs from './pages/Docs';
 import { onValue, ref } from 'firebase/database';
-import { db } from './services/firebase';
+import { db } from './firebase';
 import { ADMIN_EMAIL } from './constants';
 import { SystemConfig } from './types';
 import { Hammer } from 'lucide-react';
